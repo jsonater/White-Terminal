@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>White Terminal by Noteflow | Authorized White-Hat Penetration Testing</title>
+  <meta name="description" content="Authorized white-hat penetration testing, OS hardening and network audits by Noteflow.">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top"><span class="prompt">&gt;_</span> Noteflow | White Terminal</a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#engage">Engage</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">$ authorized-testing --only</p>
+        <h1>Ethical hackers who find the holes <span class="accent">before attackers do.</span></h1>
+        <p class="lead">White Terminal by Noteflow delivers authorized white-hat penetration testing, OS hardening and network audits with clear, actionable reports.</p>
+        <div class="cta-row" id="engage">
+          <a class="btn btn-primary" href="#contact-form" data-scroll>Hire a White-Hat Specialist</a>
+          <a class="btn" href="#contact-form" data-scroll data-service="Web App Penetration Testing">Book Penetration Test</a>
+          <a class="btn" href="#contact-form" data-scroll>Request Scope Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container section">
+      <h2>Core Services</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Web App Pen Testing</h3>
+          <p>OWASP-aligned testing of web applications and APIs: injection, auth flaws, access control and more.</p>
+          <button type="button" class="btn select-service" data-service="Web App Penetration Testing">Select Service</button>
+        </article>
+        <article class="card">
+          <h3>OS Hardening</h3>
+          <p>Configuration review and hardening for Linux, Windows and macOS against CIS-style baselines.</p>
+          <button type="button" class="btn select-service" data-service="OS Hardening">Select Service</button>
+        </article>
+        <article class="card">
+          <h3>Network Audits</h3>
+          <p>External and internal network assessments covering exposed services, segmentation and firewall rules.</p>
+          <button type="button" class="btn select-service" data-service="Network Audit">Select Service</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact-form" class="container section">
+      <h2>Engagement Request</h2>
+      <form id="engagement-form" class="card form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <!-- Replace YOUR_FORM_ID with your Formspree form ID; set the destination business email in your Formspree dashboard. -->
+        <input type="hidden" name="_subject" value="New White Terminal engagement request">
+        <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+
+        <label for="name">Client name</label>
+        <input id="name" name="name" type="text" required autocomplete="name">
+
+        <label for="email">Business email</label>
+        <input id="email" name="email" type="email" required autocomplete="email">
+
+        <label for="service">Service</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service…</option>
+          <option>Web App Penetration Testing</option>
+          <option>OS Hardening</option>
+          <option>Network Audit</option>
+        </select>
+
+        <label for="targets">Target domains / IPs</label>
+        <textarea id="targets" name="targets" rows="4" required placeholder="example.com&#10;203.0.113.10"></textarea>
+
+        <label for="os">OS environment</label>
+        <select id="os" name="os_environment" required>
+          <option value="">Select…</option>
+          <option>Linux</option>
+          <option>Windows</option>
+          <option>macOS</option>
+          <option>Mixed / Other</option>
+        </select>
+
+        <label class="check">
+          <input type="checkbox" name="ownership_authorization" value="confirmed" required>
+          <span>I confirm I own, or am legally authorized to test, every target listed above.</span>
+        </label>
+
+        <p class="disclaimer">Legal disclaimer: White Terminal performs only authorized security testing. No work begins without a signed scope and written authorization. Requests for unauthorized access, or against systems you do not own, will be declined and may be reported.</p>
+
+        <button type="submit" class="btn btn-primary">Submit Request</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; Noteflow | White Terminal. Authorized testing only.</div>
+  </footer>
+</body>
+</html>
